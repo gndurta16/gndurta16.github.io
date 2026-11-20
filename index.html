@@ -12,7 +12,7 @@
         }
 
         body {
-          margin: 0;
+            margin: 0;
             padding: 0;
             background-color: #05020a;
             color: #00ffcc;
@@ -70,6 +70,37 @@
             font-weight: bold;
         }
 
+        #hotline-top-box {
+            background: linear-gradient(90deg, #1a0033 0%, #2d004d 50%, #1a0033 100%);
+            border: 2px dashed #39ff14;
+            margin: 10px 15px;
+            padding: 12px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(57, 255, 20, 0.25);
+        }
+
+        #hotline-top-box p {
+            margin: 0 0 6px 0;
+            font-family: monospace;
+            font-size: 12px;
+            font-weight: bold;
+            color: #00f0ff;
+            letter-spacing: 1px;
+        }
+
+        .hotline-callout-text {
+            display: inline-block;
+            background: linear-gradient(180deg, #ff00aa 0%, #990066 100%);
+            color: #ffffff;
+            font-family: monospace;
+            font-size: 20px;
+            padding: 6px 18px;
+            border: 2px solid #ffffff;
+            box-shadow: 0 0 15px #ff00aa;
+            margin-top: 4px;
+            font-weight: bold;
+        }
+
         #safety-bar {
             background-color: #ff0055;
             color: #ffffff;
@@ -110,6 +141,7 @@
         #navbar {
             background-color: #190033;
             border-bottom: 2px solid #00f0ff;
+            border-top: 2px solid #00f0ff;
             text-align: center;
             padding: 6px 0;
         }
@@ -215,26 +247,6 @@
             color: #ffffff;
             margin: 0 0 8px 0;
             text-shadow: 0 0 10px #ff00aa;
-        }
-
-        .text-neon-btn {
-            display: inline-block;
-            background: linear-gradient(180deg, #ff00aa 0%, #990066 100%);
-            color: #ffffff !important;
-            font-family: monospace;
-            font-size: 22px;
-            padding: 8px 20px;
-            text-decoration: none;
-            border: 2px solid #ffffff;
-            box-shadow: 0 0 15px #ff00aa;
-            margin-top: 10px;
-            font-weight: bold;
-        }
-
-        .text-neon-btn:hover {
-            background: #00f0ff;
-            color: #000000 !important;
-            box-shadow: 0 0 20px #00f0ff;
         }
 
         .anatomy-container {
@@ -364,6 +376,11 @@
             REMOVE CLITORAL ANATOMY & HOW FGM COMPLICATIONS INTENSIFY PGAD ***
         </marquee>
 
+        <div id="hotline-top-box">
+            <p>CONFIDENTIAL PEER SUPPORT CALLOUT</p>
+            <div class="hotline-callout-text">Text +1 502-430-8613 for the PGAD hotline</div>
+        </div>
+
         <div id="navbar">
             <a href="#about">ABOUT US</a>
             <a href="#pgad-causes">CAUSES OF PGAD</a>
@@ -382,7 +399,6 @@
                         <li><strong>90% Internal:</strong> Deep pelvic structure remains intact.</li>
                         <li><strong>Neuroma Risk:</strong> Scar tissue triggers false nerve signals.</li>
                         <li><strong>Vascular Factor:</strong> Pelvic varicose veins cause chronic engorgement.</li>
-    
                     </ul>
                 </div>
 
@@ -581,7 +597,7 @@
 
                 <section id="support-email" class="cyber-box-green">
                     <div class="box-title title-green">SECURE MESSAGE / INQUIRY</div>
-    
+
                     <form onsubmit="handleLocalSubmit(event)">
                         <label style="font-size:10px; text-transform:uppercase; color:#39ff14;">Your Alias:</label>
                         <input type="text" id="msg-name" placeholder="Anonymous">
@@ -594,11 +610,11 @@
         </main>
 
         <div id="footer">
-            <p>&copy; PGADHealingLine.  Educational peer support and anatomical awareness.</p>
+            <p>&copy; PGADHealingLine. Educational peer support and anatomical awareness.</p>
         </div>
     </div>
 
-   <!-- Scripts -->
+    <!-- Scripts -->
     <script>
         function quickExit() {
             window.location.replace("https://www.google.com");
